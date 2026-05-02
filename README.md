@@ -2,6 +2,16 @@
 
 Backend de um sistema de venda de ingressos para shows. Projeto de estudo com foco em integridade transacional, controle de estoque e simulação de gateway de pagamento.
 
+## Modelagem e Event Storming
+
+### Modelo de Dados (Oracle Data Modeler)
+
+![Modelagem do Banco de Dados](docs/modelagem_bd.png)
+
+### Event Storming
+
+![Event Storming](docs/event-storming.png)
+
 ## Stack
 
 - **Node.js** + **TypeScript** (ESM / Node16)
