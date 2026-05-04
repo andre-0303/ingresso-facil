@@ -9,3 +9,10 @@ export const criarShowSchema = z.object({
 })
 
 export type CriarShowInput = z.infer<typeof criarShowSchema>
+
+export const adicionarIngressosSchema = z.object({
+  quantidade: z.number().int().positive('quantidade deve ser positiva'),
+  preco_ingresso: z.number().positive('preço deve ser positivo'),
+})
+
+export type AdicionarIngressosInput = z.infer<typeof adicionarIngressosSchema>

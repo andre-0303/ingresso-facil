@@ -10,6 +10,7 @@
     "test:coverage": "vitest run --coverage",
     "test:e2e": "vitest run src/__tests__/e2e",
     "dev": "cross-env NODE_OPTIONS=--loader=ts-node/esm nodemon --watch src --ext ts --exec node src/server.ts",
+    "dev:web": "pnpm --filter web dev",
     "migrate": "cross-env NODE_OPTIONS=--loader=ts-node/esm node src/database/migrate.ts",
     "build": "tsc",
     "start": "node dist/server.js"
@@ -19,6 +20,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.26.2",
   "dependencies": {
+    "@types/cors": "^2.8.19",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "pg": "^8.20.0",
