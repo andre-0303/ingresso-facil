@@ -3,3 +3,8 @@ node_modules/
 .claude/
 
 .env
+
+# Ignore build output
+dist/
+
+vitest.config.js
